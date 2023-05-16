@@ -13,7 +13,7 @@ for a,b in enumerate(article):
     print(f'{a}:     {b["title"]}')
 
 for k,v in article[0].items():
-    print(f'\n{k.just(15)}  {v}')
+    print(f'\n{k.ljust(15)}  {v}')
 
 print(pd.DataFrame(article))
 
