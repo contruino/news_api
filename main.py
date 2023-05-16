@@ -6,7 +6,7 @@ newsapi = NewsApiClient(api_key='your api key')
 data = newsapi.get_everything(q='tesla',language='en',page_size=20)
 print(type(data))
 print(data['status'])
-print(data['totalResult'])
+print(data['totalResults'])
 print(data['articles'][0])
 article = data['articles']
 for a,b in enumerate(article):
